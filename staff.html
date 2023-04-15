@@ -1,27 +1,52 @@
 
 <!DOCTYPE html>
-<html>
-<head>
+<html style="background-image:url(staff\,stu\ bg.png)" >
+<head style="background-image:url(staff\,stu\ bg.png)" >
     <style>
-        .mar{
-            margin-left: 700px;
+        .staff{
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 36px;
+gap: 10px;
+
+position: absolute;
+width: 128px;
+height: 39px;
+left: 1277px;
+top: 65px;
+border-radius: 13px;
+
+            
         }
-        .mar1{
-            margin-left: 200px;
+        .stu{
+          display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 4px 36px;
+gap: 10px;
+
+position: absolute;
+width: 170px;
+height: 39px;
+left: 1088px;
+top: 65px;
+border-radius: 13px;
         }
+      
     </style>
-    <img src="C:\Users\indhu\Downloads\WhatsApp Image 2023-04-11 at 3.32.53 PM.jpeg" width="200px" >
-    <a href="./staff.html"><img class="mar" src="C:\Users\indhu\OneDrive\Pictures\staff.jpeg" width="100px" >
-    <a href="./students.html"><img class="mar1" src="C:\Users\indhu\OneDrive\Pictures\students.jpeg" width="130px" >
+    <div class="bg">
+    <img src= "wizardicon.png" width="200px" >
+    <a href="./staff.html"><img class="staff" src= "stafficon.png"width="100px" >
+    <a href="./students.html"><img class="stu"  src="studentsicon - Copy.png"width="130px" >
+    </div>
 </head>
 <style>
-* {
-  box-sizing: border-box;
-}
-
+  
 body {
   margin: 0;
   font-family: Arial;
+  background-image:url("staff,stu bg.png");
 }
 
 .header {
@@ -45,24 +70,25 @@ body {
   content: "";
   display: table;
   clear: both;
+  
 }
 </style>
-<body>
+<body >
 <!-- Photo Grid -->
 <div class="row"> 
   <div class="column">
-  <img src="C:\Users\indhu\OneDrive\Pictures\dumbledore.png" style="width:50%">
-  <img src="C:\Users\indhu\OneDrive\Pictures\mcgonagall.png" style="width:50%">
+  <a href="./dumbledore.html"><img src="dumbledore.png" style="width:50%"></a>
+  <a href="./mcgonagall.html"> <img src="mcgonagall.png" style="width:50%"></a>
   </div>
 
   <div class="column">
-  <img src= "C:\Users\indhu\OneDrive\Pictures\hagrid.png"style="width:50%">
-  <img src= "C:\Users\indhu\OneDrive\Pictures\umbridge.png"style="width:50%">
+    <a href="./hagrid.html"><img src= "hagrid.png"style="width:50%"></a>
+    <a href="./umbridge.html"> <img src= "umbridge.png"style="width:50%"></a>
   </div>  
 
   <div class="column">
-  <img src="C:\Users\indhu\OneDrive\Pictures\lupin.png"style="width:50%">
-  <img src="C:\Users\indhu\OneDrive\Pictures\snape.png"style="width:50%">  
+   <a href="./lupin.html"><img src="lupin.png"style="width:50%"></a>
+   <a href="./snape.html"><img src="snape.png"style="width:50%"> </a> 
   </div>
   
 </div>
