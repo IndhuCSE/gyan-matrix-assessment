@@ -84,18 +84,39 @@
     <div class="container">
       <br />
       <br />
-
       <div style="text-align:center;">
-        <h1>LogIn</h1>
         <h1 class="login"><b>LogIn</b></h1>
-        <input type="text" placeholder="UserName" name="username"> <br /><br />
-        <input type="password" placeholder="Password" name="password"> <br><br><br>
+        <form action="staff.html" method="post"onclick="return validate()">
+        <input type="text" placeholder="UserName" name="username" required> <br /><br />
+        <input type="password" placeholder="Password" name="password" required> <br><br><br>
         <a href="./staff.html"><button><b>Login</b></button> </a>
+        </form>
       </div>
     </div>
+    <script>
+      function validate() {
+    var email = document.getElementById("email").value;
+    var password = document.getElementById("password").value;
+    var emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+  
+    }
+    if (!email.match(emailRegex)) {
+      alert("Please enter a valid email address");
+      document.getElementById("chk").style.display="block"
+      return false;
+    }
+
+    if(password.length < 4){
+      document.getElementById("chk").style.display="block"
+        alert("valid password needed");
+        return false;
+    }
+    
+    return true;
+    </script>
 </body>
 <footer>
-  <h5 style="font-family: roboto;text-align: end; color:white">@ all rigths reserved</h5>
+  <h5 style="font-family: roboto;text-align: end; color:white">@all rigths reserved</h5>
 </footer>
 
 </html>
